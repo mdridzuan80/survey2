@@ -26,5 +26,6 @@ class Welcome extends CI_Controller {
 	public function store()
 	{
 		var_dump($this->input->post());
+
 	}
 }
