@@ -28,10 +28,8 @@
     <!-- Page Content-->
     <div class="container px-4 px-lg-5">
         <div class="text-center mt-5">
-            <h1>KAJIAN PENEMPATAN DALAMAN ("JOB ROTATION") BAGI WARGA KERJA PEJABAT DAERAH DAN TANAH ALOR GAJAH</h1>
-            <p class="lead">Kajian ini dibuat untuk mendapatkan gambaran penempatan tuan/puan selama berkhidmat di jabatan ini. Kajian ini hanya terpakai kepada Pegawai P&P dan juga kumpulan sokongan skim PT(N)/(W) dan PT(PO) sahaja</p>
-            <p class="lead">Adalah diingatkan bahawa kajian ini adalah sebagai salah satu usaha untuj mengetahui kemahiran tuan/puan sedia ada sepanjang di dalam perkhidmatan dsn perancangan untuk pusingan kerja di PDTAG.</p>
-
+            <h1><?= $item->tajuk?></h1>
+			<?= $item->keterangan?>
         </div>
 
         <div class="row" id="seksyen1">
@@ -60,18 +58,18 @@
                                 <label for="comJawatan" class="form-label ">Jawatan <span class="text-danger">*</span> </label>
                                 <select class="form-select" id="comJawatan">
                                     <option value="0" selected>Pilihan Jawatan</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+									<?php foreach($jawatan as $item){?>
+										<option value="<?=$item->id ?>"><?=$item->nama?></option>
+                                    <?php }?>
                                 </select>
                             </div>
                             <div class="mb-3">
                                 <label for="comGred" class="form-label">Gred <span class="text-danger">*</span> </label>
                                 <select class="form-select" id="comGred">
                                     <option value="0" selected>Pilihan Gred</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <?php foreach($gred as $item){?>
+										<option value="<?=$item->id ?>"><?=$item->nama?></option>
+                                    <?php }?>
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -776,17 +774,12 @@
 
             $("#btnNextSek3").on("click", function() {
                 if (validate_seksyen3()) {
-                    //console.log(seksyen1);
-                    //console.log(seksyen2);
-                    //console.log(seksyen3);
-
-                    //return alert("hantar!");
-
 					$.ajax({
-						"url": "http://survey2.test/survey/store",
+						"url": '<?=site_url('survey/store')?>',
 						"type": "POST",
 						"success":function(result){
 							console.log(result);
+							window.location.replace('<?=site_url('survey/terima_kasih')?>');
 						},
 						"data": {
 							"sek1": seksyen1,
@@ -794,6 +787,8 @@
 							"sek3": seksyen3
 						}
 					});
+
+					return;
                 }
 
                 return alert("sila penuhkan tempat yang bertanda (*)");
