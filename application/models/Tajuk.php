@@ -6,12 +6,12 @@ class Tajuk extends CI_Model {
 	public $date;
 
 	public function first() {
-		$sql = "select code, tajuk, keterangan from tajuk limit 1";
+		$sql = "select id, code, tajuk, keterangan from tajuk limit 1";
 		return $this->db->query($sql);
 	}
 
 	public function item($uuid) {
-		$sql = "select code, tajuk, keterangan from tajuk where code = ? limit 1";
+		$sql = "select id, code, tajuk, keterangan from tajuk where code = ? limit 1";
 		return $this->db->query($sql,[$uuid]);
 	}
 	

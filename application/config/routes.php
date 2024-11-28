@@ -56,4 +56,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['survey/store'] = 'welcome/store';
 $route['survey/(:any)']['POST'] = 'welcome/index/$1';
 $route['survey/terima_kasih'] = 'welcome/terima';
-
+$route['survey/info/(:any)'] = 'welcome/info/$1';
