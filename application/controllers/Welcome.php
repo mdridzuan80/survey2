@@ -49,6 +49,7 @@ class Welcome extends CI_Controller {
 		$data["gred"] = $this->gred->list();
 
 		$this->session->set_userdata(['code'=>$data["item"]->code]);
+		$this->session->set_userdata(['tajuk_id'=>$data["item"]->id]);
 
 		$this->load->view('welcome_message', $data);
 	}
@@ -63,10 +64,9 @@ class Welcome extends CI_Controller {
 
 		$this->session->set_userdata(['link'=>random_string('md5', 8)]);
 
-		echo $this->mycarbon->createFromFormat("d/m/Y",$input['sek2']['tempat1_tkh_mula'])->format("d/m/Y");
  		$fields = [
 			"random"=>$this->session->link,
-			"tajuk_id"=>$input['sek1']['nama'],
+			"tajuk_id"=>$this->session->tajuk_id,
 			"nama"=>$input['sek1']['nama'],
 			"umur"=>$input['sek1']['umur'],
 			"jawatan_id"=>$input['sek1']['jawatan'],
@@ -139,5 +139,14 @@ class Welcome extends CI_Controller {
 		$params['data'] = site_url('survey/info/'.$code);
 		$params['size'] = 512;
 		$this->ciqrcode->generate($params);
+	}
+
+	public function info($code)
+	{
+		$this->load->model("survey");
+		$data["info"] = $this->survey->info($code);
+
+		print_r($data);
+
 	}
 }
