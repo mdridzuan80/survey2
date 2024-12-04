@@ -173,7 +173,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <label class="form-label ">Jika pernah ditempatkan di unit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="chkPenempatan1" id="chkYa1" value="1">
                                     <label class="form-check-label" for="flexRadioDefault1">
@@ -219,7 +219,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <label class="form-label ">Jika pernah ditempatkan di unit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="chkPenempatan2" id="chkYa2" value="1">
                                     <label class="form-check-label" for="flexRadioDefault1">
@@ -266,7 +266,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <label class="form-label ">Jika pernah ditempatkan di unit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="chkPenempatan3" id="chkYa3" value="1">
                                     <label class="form-check-label" for="flexRadioDefault1">
@@ -312,7 +312,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <label class="form-label ">Jika pernah ditempatkan di unit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="chkPenempatan4" id="chkYa4" value="1">
                                     <label class="form-check-label">
@@ -358,7 +358,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <label class="form-label ">Jika pernah ditempatkan di unit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="chkPenempatan5" id="chkYa5" value="1">
                                     <label class="form-check-label">
@@ -404,7 +404,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label ">Jika pernah ditempatkan diunit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
+                                <label class="form-label ">Jika pernah ditempatkan di unit lain, sila tekan "Ya". Jika Tiada, sila tekan "Tidak" <span class="text-danger">*</span> </label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="chkPenempatan6" id="chkYa6" value="1">
                                     <label class="form-check-label">
