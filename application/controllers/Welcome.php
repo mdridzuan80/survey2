@@ -46,7 +46,7 @@ class Welcome extends CI_Controller {
 		}
 
 		$data["jawatan"] = $this->jawatan->list();
-		$data["gred"] = $this->gred->list();
+		$data["gred"] = $this->gred->listActive();
 
 		$this->session->set_userdata(['code'=>$data["item"]->code]);
 		$this->session->set_userdata(['tajuk_id'=>$data["item"]->id]);
